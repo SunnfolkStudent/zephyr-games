@@ -29,7 +29,7 @@ public class jumpKing : MonoBehaviour
             rb.velocity = new Vector2(moveInput * walkSpeed, rb.velocity.y);
         }
 
-        isGrounded = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - 0.5f),
+        isGrounded = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - 1.5f),
         new Vector2(0.9f, 0.4f), 0f, groundMask);
 
         if(jumpValue > 0)

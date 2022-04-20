@@ -15,40 +15,49 @@ public class Dash : MonoBehaviour
    private bool _isDashing;
    private bool _canDash = true;
 
+   private Animator _animator;
+   private Rigidbody2D _rigidbody;
+   private bool IsGrounded;
+   
+   
    private void Start()
    {
+      _animator = GetComponent<Animator>();
       _trailRenderer = GetComponent<TrailRenderer>();
+      _rigidbody = GetComponent<Rigidbody2D>();
    }
 
    private void Update()
    {
       var dashInput = Input.GetButtonDown("Dash");
-   }
-   
-   if (dashInput && _canDash)
-   {
-      _isDashing = true;
-      _canDash = false;
-      _trailRenderer.emitting = true;
-      _dashingDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-      if (_dashingDir == Vector2.zero)
-      {
-         _dashingDir = new Vector2(transform.localScale.x, 0);
-      }
-      StartCoroutine(StopDashing());
-   }
-      
-   _animator.SetBool("IsDashing", _isDashing);
-      
-   if (_isDashing)
-   {
-      _rigidbody.velocity = _dashingDir.normalized * _dashingVelocity;
-      return;
-   }
 
-   if (IsGrounded())
-   {
-      _canDash = true;
+
+      if (dashInput && _canDash)
+      {
+         _isDashing = true;
+         _canDash = false;
+         _trailRenderer.emitting = true;
+         _dashingDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+         if (_dashingDir == Vector2.zero)
+         {
+            _dashingDir = new Vector2(transform.localScale.x, 0);
+         }
+
+         StartCoroutine(StopDashing());
+      }
+
+      _animator.SetBool("IsDashing", _isDashing);
+
+      if (_isDashing)
+      {
+         _rigidbody.velocity = _dashingDir.normalized * _dashingVelocity;
+         return;
+      }
+
+      if (IsGrounded)
+      {
+         _canDash = true;
+      }
    }
 
    private IEnumerator StopDashing()
