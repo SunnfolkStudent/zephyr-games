@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="12d2e6c2-c3f1-4107-8a49-0b17b139877b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.zephyr-games/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.zephyr-games/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dash.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dash.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/jumpKing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/jumpKing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/jumpKing.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/jumpKing.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +58,10 @@
       <option name="presentableId" value="Default" />
       <updated>1650451395317</updated>
       <workItem from="1650451402062" duration="12000" />
+      <workItem from="1650540825476" duration="1832000" />
+      <workItem from="1650615762495" duration="140000" />
+      <workItem from="1650615973205" duration="119000" />
+      <workItem from="1650616132804" duration="279000" />
     </task>
     <servers />
   </component>
