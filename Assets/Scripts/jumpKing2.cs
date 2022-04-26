@@ -48,7 +48,7 @@ public class jumpKing2 : MonoBehaviour
             jumpValue += jumpValueCounter * Time.deltaTime;
         }
 
-        if(input.JumpReleased && isGrounded && canJump)
+        if(input.JumpPressed && isGrounded && canJump)
         {
             rb.velocity = new Vector2(0.0f, rb.velocity.y);
         }
@@ -60,15 +60,15 @@ public class jumpKing2 : MonoBehaviour
             rb.velocity = new Vector2(tempx, tempy);
             Invoke("ResetJump", 0.2f);
         }
-
-        if(input.JumpPressed)
+        
+        if(input.JumpReleased)
         {
             if(isGrounded)
             {
                 rb.velocity = new Vector2(input.MoveInput.x * walkSpeed, jumpValue);
-                jumpValue = 0.0f;
             }
             canJump = true;
+            jumpValue = 0;
         }
     }
 

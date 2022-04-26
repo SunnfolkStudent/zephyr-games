@@ -8,7 +8,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 93
+  controlID: 296
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 92
+  controlID: 295
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,8 +119,8 @@ MonoBehaviour:
     y: 0
     width: 453
     height: 631
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 125
+  controlID: 122
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 126
+  controlID: 123
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InputActionEditorWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -321,16 +321,16 @@ MonoBehaviour:
     y: 0
     width: 1104
     height: 561
-  m_MinSize: {x: 602, y: 321}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
   - {fileID: 16}
   - {fileID: 15}
   - {fileID: 14}
-  m_Selected: 3
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 3
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -434,13 +434,9 @@ MonoBehaviour:
       {\n                    \"name\": \"Dash\",\n                    \"type\": \"Value\",\n                   
       \"id\": \"dfdb0d21-4938-4fe3-a041-79d90cdefea7\",\n                    \"expectedControlType\":
       \"\",\n                    \"processors\": \"\",\n                    \"interactions\":
-      \"\",\n                    \"initialStateCheck\": true\n                },\n               
-      {\n                    \"name\": \"Camera\",\n                    \"type\":
-      \"Button\",\n                    \"id\": \"2472fd9c-10c5-4194-8080-8749788ad0f7\",\n                   
-      \"expectedControlType\": \"Button\",\n                    \"processors\": \"\",\n                   
-      \"interactions\": \"\",\n                    \"initialStateCheck\": false\n               
-      }\n            ],\n            \"bindings\": [\n                {\n                   
-      \"name\": \"Keyboard\",\n                    \"id\": \"9858fc80-d282-401b-9e64-58eb3f3ab2d9\",\n                   
+      \"\",\n                    \"initialStateCheck\": true\n                }\n           
+      ],\n            \"bindings\": [\n                {\n                    \"name\":
+      \"Keyboard\",\n                    \"id\": \"9858fc80-d282-401b-9e64-58eb3f3ab2d9\",\n                   
       \"path\": \"2DVector\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
       \"action\": \"Move\",\n                    \"isComposite\": true,\n                   
@@ -494,13 +490,20 @@ MonoBehaviour:
       \"path\": \"<Gamepad>/buttonWest\",\n                    \"interactions\":
       \"\",\n                    \"processors\": \"\",\n                    \"groups\":
       \"\",\n                    \"action\": \"Dash\",\n                    \"isComposite\":
-      false,\n                    \"isPartOfComposite\": false\n                },\n               
-      {\n                    \"name\": \"\",\n                    \"id\": \"81ffca93-ded6-47f5-9db2-ac6120d47d8f\",\n                   
+      false,\n                    \"isPartOfComposite\": false\n                }\n           
+      ]\n        },\n        {\n            \"name\": \"Camera\",\n            \"id\":
+      \"e87000bf-ff0a-42d1-9dc9-9450b7cca38c\",\n            \"actions\": [\n               
+      {\n                    \"name\": \"Camera\",\n                    \"type\":
+      \"Button\",\n                    \"id\": \"63516047-64b9-40b2-ae79-9ba98e4065b8\",\n                   
+      \"expectedControlType\": \"Button\",\n                    \"processors\": \"\",\n                   
+      \"interactions\": \"\",\n                    \"initialStateCheck\": false\n               
+      }\n            ],\n            \"bindings\": [\n                {\n                   
+      \"name\": \"\",\n                    \"id\": \"50b20a42-a2a6-47d2-81af-6a9bedcaa300\",\n                   
       \"path\": \"<Keyboard>/x\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
       \"action\": \"Camera\",\n                    \"isComposite\": false,\n                   
       \"isPartOfComposite\": false\n                },\n                {\n                   
-      \"name\": \"\",\n                    \"id\": \"fa749d5e-3fa9-45cf-8167-dc94d90759c4\",\n                   
+      \"name\": \"\",\n                    \"id\": \"e313ca89-fe38-4d2a-ad96-93f34334d381\",\n                   
       \"path\": \"<Gamepad>/buttonNorth\",\n                    \"interactions\":
       \"\",\n                    \"processors\": \"\",\n                    \"groups\":
       \"\",\n                    \"action\": \"Camera\",\n                    \"isComposite\":
@@ -840,18 +843,18 @@ MonoBehaviour:
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 16
   m_LastFolders:
   - Assets/Scripts
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Kristina Hatlen\Documents\GitHub\zephyr-games
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: C:\Users\salam\Documents\GitHub\zephyr-games
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 886f0000
-    m_LastClickedID: 28552
-    m_ExpandedIDs: 000000005e6f0000606f0000626f0000646f0000666f0000686f000000ca9a3b
+    m_SelectedIDs: 266e0000
+    m_LastClickedID: 28198
+    m_ExpandedIDs: 000000001a6e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -879,7 +882,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005e6f0000606f0000626f0000646f0000666f0000686f0000
+    m_ExpandedIDs: 000000001a6e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -932,7 +935,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &20
@@ -970,7 +973,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 1205
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1007,9 +1010,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 886f0000
+      m_SelectedIDs: a01a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 0cfbffff
+      m_ExpandedIDs: 8efaffff20710000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1280,9 +1283,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.9571408, y: 5.439779, z: -1.0511594}
+    m_Target: {x: -22.49616, y: 23.288176, z: -0.22170827}
     speed: 2
-    m_Value: {x: 1.9571408, y: 5.439779, z: -1.0511594}
+    m_Value: {x: -22.49616, y: 23.288176, z: -0.22170827}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1333,9 +1336,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.800824
+    m_Target: 35.35607
     speed: 2
-    m_Value: 14.800824
+    m_Value: 35.35607
   m_Ortho:
     m_Target: 1
     speed: 2
