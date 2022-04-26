@@ -1,7 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class Dash : MonoBehaviour
@@ -18,6 +15,8 @@ public class Dash : MonoBehaviour
    private Animator _animator;
    private Rigidbody2D _rigidbody;
    private bool IsGrounded;
+
+   private Input input;
    
    
    private void Start()
@@ -25,11 +24,12 @@ public class Dash : MonoBehaviour
       _animator = GetComponent<Animator>();
       _trailRenderer = GetComponent<TrailRenderer>();
       _rigidbody = GetComponent<Rigidbody2D>();
+      input = GetComponent<Input>();
    }
 
    private void Update()
    {
-      var dashInput = Input.GetButtonDown("Dash");
+      var dashInput = input.DashSpressed;
 
 
       if (dashInput && _canDash)
@@ -37,7 +37,8 @@ public class Dash : MonoBehaviour
          _isDashing = true;
          _canDash = false;
          _trailRenderer.emitting = true;
-         _dashingDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+         _dashingDir = input.MoveInput;
+         
          if (_dashingDir == Vector2.zero)
          {
             _dashingDir = new Vector2(transform.localScale.x, 0);

@@ -1350,11 +1350,8 @@ GameObject:
   - component: {fileID: 1071440785}
   - component: {fileID: 1071440784}
   - component: {fileID: 1071440790}
-  - component: {fileID: 1071440783}
   - component: {fileID: 1071440786}
   - component: {fileID: 1071440787}
-  - component: {fileID: 1071440789}
-  - component: {fileID: 1071440788}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1362,30 +1359,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1071440783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071440782}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc235bd52acf4f41a7a1d1023366ece, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 10
-  moveInput: 0
-  isGrounded: 1
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 8
-  bounceMat: {fileID: 6200000, guid: ec4bf5fe8c9328345892f227ce917ffb, type: 2}
-  normalMat: {fileID: 6200000, guid: e72699198d99d3e43810020f3ac2e5be, type: 2}
-  canJump: 1
-  jumpValue: 0
-  jumpValueCounter: 5
-  MaxJumpValue: 20
 --- !u!212 &1071440784
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1490,54 +1463,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1071440788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071440782}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc235bd52acf4f41a7a1d1023366ece, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 10
-  moveInput: 0
-  isGrounded: 1
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 8
-  bounceMat: {fileID: 6200000, guid: ec4bf5fe8c9328345892f227ce917ffb, type: 2}
-  normalMat: {fileID: 6200000, guid: e72699198d99d3e43810020f3ac2e5be, type: 2}
-  canJump: 1
-  jumpValue: 0
-  jumpValueCounter: 5
-  MaxJumpValue: 20
---- !u!114 &1071440789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071440782}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc235bd52acf4f41a7a1d1023366ece, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 10
-  moveInput: 0
-  isGrounded: 1
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 8
-  bounceMat: {fileID: 6200000, guid: ec4bf5fe8c9328345892f227ce917ffb, type: 2}
-  normalMat: {fileID: 6200000, guid: e72699198d99d3e43810020f3ac2e5be, type: 2}
-  canJump: 1
-  jumpValue: 0
-  jumpValueCounter: 5
-  MaxJumpValue: 20
 --- !u!114 &1071440790
 MonoBehaviour:
   m_ObjectHideFlags: 0
