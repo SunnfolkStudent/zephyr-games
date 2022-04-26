@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class jumpKing : MonoBehaviour
 {
     public float walkSpeed;
@@ -94,3 +94,4 @@ public class jumpKing : MonoBehaviour
         Gizmos.DrawCube(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - 0.5f), new Vector2(0.9f, 0.2f));
     }
 }
+*/

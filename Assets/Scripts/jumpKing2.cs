@@ -5,7 +5,6 @@ using UnityEngine;
 public class jumpKing2 : MonoBehaviour
 {
     public float walkSpeed;
-    private float moveInput;
     public bool isGrounded;
     private Rigidbody2D rb;
     public LayerMask groundMask;
@@ -16,18 +15,20 @@ public class jumpKing2 : MonoBehaviour
     public float jumpValueCounter = 10f;
     public float maxJumpValue = 10;
 
+
+    private Input input;
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        input = GetComponent<Input>();
     }
 
     void Update()
     {
-        moveInput = Input.GetAxisRaw("Horizontal");
 
         if (jumpValue == 0.0f && isGrounded)
         {
-            rb.velocity = new Vector2(moveInput * walkSpeed, rb.velocity.y);
+            rb.velocity = new Vector2(input.MoveInput.x * walkSpeed, rb.velocity.y);
         }
 
         isGrounded = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - 1.1f),
@@ -42,29 +43,29 @@ public class jumpKing2 : MonoBehaviour
             rb.sharedMaterial = normalMat;
         }
 
-        if(Input.GetKey("space") && isGrounded && canJump)
+        if(input.JumpHeld && isGrounded && canJump)
         {
             jumpValue += jumpValueCounter * Time.deltaTime;
         }
 
-        if(Input.GetKeyDown("space") && isGrounded && canJump)
+        if(input.JumpReleased && isGrounded && canJump)
         {
             rb.velocity = new Vector2(0.0f, rb.velocity.y);
         }
 
         if(jumpValue >= maxJumpValue && isGrounded)
         {
-            float tempx = moveInput * walkSpeed;
+            float tempx = input.MoveInput.x * walkSpeed;
             float tempy = jumpValue;
             rb.velocity = new Vector2(tempx, tempy);
             Invoke("ResetJump", 0.2f);
         }
 
-        if(Input.GetKeyUp("space"))
+        if(input.JumpPressed)
         {
             if(isGrounded)
             {
-                rb.velocity = new Vector2(moveInput * walkSpeed, jumpValue);
+                rb.velocity = new Vector2(input.MoveInput.x * walkSpeed, jumpValue);
                 jumpValue = 0.0f;
             }
             canJump = true;
