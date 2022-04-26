@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
@@ -8,7 +9,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Keyboard.current.escapeKey.isPressed)
         {
             if (GameIsPaused)
             {
@@ -35,6 +36,12 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    public void LoadSettings()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("SettingsMenu");
+    }
+    
     public void LoadMenu()
     {
         Time.timeScale = 1f;

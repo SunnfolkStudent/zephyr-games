@@ -28,6 +28,7 @@ namespace SimpleCamShake
 
         public static IEnumerator Shake()
         {
+            print("Running");
             Vector3 originalPos = _cam.transform.localPosition;
 
             float elapsedTime = 0f;

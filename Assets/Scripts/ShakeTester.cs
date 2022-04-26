@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace SimpleCamShake
 {
@@ -9,12 +10,14 @@ namespace SimpleCamShake
     
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Keyboard.current.qKey.wasPressedThisFrame)
             {
+                print("Clicked");
                 StartCoroutine(CameraShake.Shake());
+               
             }
         
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Keyboard.current.eKey.wasPressedThisFrame)
             {
                 _enumerator = CameraShake.VariableShake(1f, 0.2f);
                 StartCoroutine(_enumerator);

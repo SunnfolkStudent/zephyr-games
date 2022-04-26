@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CinemachineShake.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="283htQnC4U17i97w7P0CCIkQlUH" />
   <component name="ProjectViewState">
@@ -60,6 +61,7 @@
       <workItem from="1650615762495" duration="140000" />
       <workItem from="1650615973205" duration="119000" />
       <workItem from="1650616132804" duration="279000" />
+      <workItem from="1650962400843" duration="3901000" />
     </task>
     <servers />
   </component>
