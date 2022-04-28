@@ -13,14 +13,16 @@ namespace SimpleCamShake
             if (Keyboard.current.qKey.wasPressedThisFrame)
             {
                 print("Clicked");
-                StartCoroutine(CameraShake.Shake());
+                //StartCoroutine(CameraShake.Shake());
+                CinemachineShake.Instance.ShakeCamera(1f, 1f);
                
             }
         
             if (Keyboard.current.eKey.wasPressedThisFrame)
             {
                 _enumerator = CameraShake.VariableShake(1f, 0.2f);
-                StartCoroutine(_enumerator);
+                //StartCoroutine(_enumerator);
+                
             }
         }
     }
