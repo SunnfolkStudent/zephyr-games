@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
+/*
 namespace SimpleCamShake
 {
     public class CameraShakeBasic : MonoBehaviour
@@ -39,4 +39,4 @@ namespace SimpleCamShake
             transform.localPosition = originalPos;
         }
     }
-}
+}*/

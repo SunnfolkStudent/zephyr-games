@@ -30,7 +30,7 @@ public class CinemachineSwitcherArray : MonoBehaviour
 
     private void Jump()
     {
-        _rigidbody2D.velocity = new Vector2(0f, 10f);
+        //_rigidbody2D.velocity = new Vector2(0f, 10f);
     }
 
     private void Update()
