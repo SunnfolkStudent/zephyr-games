@@ -68,6 +68,17 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "up",
+                    "id": "6a81f507-423c-497d-aeca-05029957d94a",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "DPAD",
                     "id": "c96b6cb1-eb0d-4e31-bc15-d7808dea76e6",
                     "path": "2DVector",
@@ -93,6 +104,17 @@
                     "name": "right",
                     "id": "3951d120-22b4-49b7-81e7-23e98bc8ba05",
                     "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "c913d485-0df9-4c3c-a399-5c5aff6f25da",
+                    "path": "<Gamepad>/dpad/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

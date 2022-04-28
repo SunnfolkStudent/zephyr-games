@@ -19,10 +19,8 @@ public class Input : MonoBehaviour
         JumpPressed = input.Player.Jump.WasPressedThisFrame();
         JumpReleased = input.Player.Jump.WasReleasedThisFrame();
         JumpHeld = input.Player.Jump.ReadValue<float>() > 0;
+        
         DashSpressed = input.Player.Dash.WasPressedThisFrame();
-
-
-
     }
 
     private void Awake() => input = new InputActions();
