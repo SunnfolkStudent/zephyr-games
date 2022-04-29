@@ -30,7 +30,8 @@ public class Dash : MonoBehaviour
 
    private void Update()
    {
-      _dashingDir = input.MoveInput;
+      
+      
       
       if (!_isDashing && playerController.isGrounded)
       {
@@ -55,6 +56,10 @@ public class Dash : MonoBehaviour
       if (_isDashing)
       {
          _rigidbody.velocity = _dashingDir * _dashingVelocity;
+      }
+      else
+      {
+         _dashingDir = input.MoveInput;
       }
 
    }
