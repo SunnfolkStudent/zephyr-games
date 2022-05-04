@@ -45,6 +45,21 @@ public class SettingsMenu : MonoBehaviour
         audioMixer.SetFloat("volume", volume);
     }
 
+    public void SetMusicVol(float musicvol)
+    {
+        audioMixer.SetFloat("MusicVolume", musicvol);
+    }
+
+    public void SetSfxVol(float sfxvol)
+    {
+        audioMixer.SetFloat("SFXVolume", sfxvol);
+    }
+
+    public void ClearVolume(string name)
+    {
+        audioMixer.ClearFloat(name);
+    }
+    
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);

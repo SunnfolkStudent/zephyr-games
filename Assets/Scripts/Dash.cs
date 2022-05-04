@@ -19,6 +19,8 @@ public class Dash : MonoBehaviour
    private Input input;
    private jumpKing2 playerController;
 
+   private float previousxVelocity;
+
    private void Start()
    {
       _animator = GetComponent<Animator>();
@@ -30,12 +32,14 @@ public class Dash : MonoBehaviour
 
    private void Update()
    {
-      
-      
-      
       if (!_isDashing && playerController.isGrounded)
       {
          _canDash = true;
+      }
+
+      if (!_isDashing)
+      {
+         previousxVelocity = _rigidbody.velocity.x;
       }
       
       if (input.DashSpressed && _canDash && !playerController.isGrounded)
@@ -50,8 +54,6 @@ public class Dash : MonoBehaviour
          _trailRenderer.emitting = true;
          StartCoroutine(StopDashing());
       }
-
-      _animator.SetBool("IsDashing", _isDashing);
 
       if (_isDashing)
       {
@@ -69,6 +71,7 @@ public class Dash : MonoBehaviour
       print("Start Dash");
       yield return new WaitForSeconds(_dashingTime);
       print("Finsihed Dash");
+      _rigidbody.velocity = new Vector2(previousxVelocity, _rigidbody.velocity.y);
       _isDashing = false;
       _trailRenderer.emitting = false;
    }

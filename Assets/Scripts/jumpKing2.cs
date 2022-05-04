@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,8 @@ public class jumpKing2 : MonoBehaviour
     public float jumpValueCounter = 10f;
     public float maxJumpValue = 10;
 
+    [Header("MaxValues")] public float maxVelocity;
+    
     private Dash _dash;
     private Input input;
     void Start()
@@ -36,14 +39,7 @@ public class jumpKing2 : MonoBehaviour
             rb.velocity = new Vector2(input.MoveInput.x * walkSpeed, rb.velocity.y);
         }
         
-        if(jumpValue > 0)
-        {
-            rb.sharedMaterial = bounceMat;
-        }
-        else
-        {
-            rb.sharedMaterial = normalMat;
-        }
+        rb.sharedMaterial = jumpValue > 0 ? bounceMat : normalMat;
 
         if(input.JumpHeld && isGrounded && canJump)
         {
@@ -72,6 +68,9 @@ public class jumpKing2 : MonoBehaviour
             canJump = true;
             jumpValue = 0;
         }
+
+        var rbVelocity = rb.velocity;
+        rbVelocity.y = Mathf.Clamp(rb.velocity.y, -maxVelocity, maxVelocity);
     }
 
     void ResetJump()
@@ -84,5 +83,13 @@ public class jumpKing2 : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawCube(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - 0.5f), new Vector2(0.9f, 0.2f));
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other != null)
+        {
+            //CinemachineShake.Instance.ShakeCamera(Mathf.Abs(rb.velocity.magnitude * 0.5f), 0.3f);
+        }
     }
 }

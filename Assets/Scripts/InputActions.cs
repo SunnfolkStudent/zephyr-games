@@ -180,7 +180,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""4af5becb-388f-4e9a-80b3-738ce11049de"",
-                    ""path"": ""<Keyboard>/z"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

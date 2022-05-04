@@ -1,23 +1,32 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using Cinemachine;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class CinemachineShake : MonoBehaviour
 {
     public static CinemachineShake Instance { get; private set; }
-    private CinemachineVirtualCamera cinemachineVirtualCamera;
+    public CinemachineVirtualCamera cinemachineVirtualCamera;
     private float shakeTimer;
     private float shakeTimerTotal;
     private float startingIntensity;
+
+    private string camName;
+
+    private CinemachineBrain _brain;
     
     private void Awake()
     {
         Instance = this;
-        cinemachineVirtualCamera = GetComponent<CinemachineVirtualCamera>();
+        //cinemachineVirtualCamera = GetComponent<CinemachineVirtualCamera>();
+        _brain = GetComponent<CinemachineBrain>();
+        cinemachineVirtualCamera = _brain.ActiveVirtualCamera as CinemachineVirtualCamera;
     }
+   private  IEnumerator Start()
+    {
+        yield return null;
+        cinemachineVirtualCamera = _brain.ActiveVirtualCamera as CinemachineVirtualCamera;
+    }
+   
 
     public void ShakeCamera(float intensity, float time)
     {
@@ -34,6 +43,11 @@ public class CinemachineShake : MonoBehaviour
 
     private void Update()
     {
+        if (cinemachineVirtualCamera.name !=_brain.ActiveVirtualCamera.VirtualCameraGameObject.name)
+        {
+            cinemachineVirtualCamera = _brain.ActiveVirtualCamera as CinemachineVirtualCamera;
+        }
+        
         if (shakeTimer > 0)
         {
             shakeTimer -= Time.deltaTime;
