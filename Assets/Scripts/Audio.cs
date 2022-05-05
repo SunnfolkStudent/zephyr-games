@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Audio : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class Audio : MonoBehaviour
     private AudioSource _audioSource;
     private Input _input;
     private jumpKing2 _movement;
+    private Dash _dash;
 
     private bool _canLand;
     
@@ -26,7 +29,6 @@ public class Audio : MonoBehaviour
         WalkingAudio();
         JumpAudio(); 
         LandingAudio();
-        WallAudio();
         WindAudio();
     }
 
@@ -62,15 +64,13 @@ public class Audio : MonoBehaviour
             _canLand = true;
         }
     }
-
-    private void WallAudio()
-    {
-        _audioSource.PlayOneShot(wall);
-    }
-
+    
     private void WindAudio()
     {
-        _audioSource.PlayOneShot(wind);
+        if (_dash._isDashing)
+        {
+            _audioSource.PlayOneShot(wind);
+        }
     }
     
     private void AudioShowCase(AudioClip audioClip)
