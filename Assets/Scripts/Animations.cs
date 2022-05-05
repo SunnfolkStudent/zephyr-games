@@ -86,7 +86,7 @@ public class Animations : MonoBehaviour
       if (previousState == States.Fall.ToString()) 
       { 
          _animator.Play("Land");
-         //CinemachineShake.Instance.ShakeCamera(Mathf.Abs(_rigidbody2D.velocity.y * 0.1f), 0.3f);
+         CinemachineShake.Instance.ShakeCamera(Mathf.Abs(_rigidbody2D.velocity.y * 0.1f), 0.3f);
       }
       if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")) { previousState = state.ToString(); }
       
@@ -95,7 +95,7 @@ public class Animations : MonoBehaviour
       _animator.Play(_Input.MoveInput.x != 0 ? "Walk" : "Idle");
 
       if (!_movement.isGrounded) { state = States.Fall; }
-      else if (_Input.JumpPressed) { canJump = true; state = States.Jump; }
+      else if (_Input.JumpPressed) { _animator.Play("jumpPressed"); canJump = true; state = States.Jump; }
    }
 
    void JumpState()
@@ -108,7 +108,7 @@ public class Animations : MonoBehaviour
       }
       
       previousState = state.ToString();
-      if (_rigidbody2D.velocity.y < 0) { state = States.Fall; }
+      if (_rigidbody2D.velocity.y < 0 && _animator.GetCurrentAnimatorStateInfo(0).IsName("jumpFinal")) { state = States.Fall; }
       else if (_Input.DashSpressed) { state = States.Fall; }
    }
    

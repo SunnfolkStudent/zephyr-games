@@ -26,28 +26,18 @@ public class Audio : MonoBehaviour
 
     private void Update()
     {
-        WalkingAudio();
-        JumpAudio(); 
         LandingAudio();
-        WindAudio();
     }
 
     public void WalkingAudio()
     {
-        if (_movement.isGrounded && _input.MoveInput.x != 0)
-        {
-            _audioSource.PlayOneShot(walk); 
-            PlayerParticles.CreateDust();
-        }
+        _audioSource.PlayOneShot(walk);
     }
 
     private void JumpAudio()
     {
-        if (_input.JumpPressed && _movement.isGrounded)
-        {
-            _audioSource.pitch = Random.Range(0.5f, 1.5f);
-            _audioSource.PlayOneShot(jump);
-        }
+        _audioSource.pitch = Random.Range(0.5f, 1.5f);
+        _audioSource.PlayOneShot(jump);
     }
 
     private void LandingAudio()
@@ -67,10 +57,7 @@ public class Audio : MonoBehaviour
     
     private void WindAudio()
     {
-        if (_dash._isDashing)
-        {
-            _audioSource.PlayOneShot(wind);
-        }
+        _audioSource.PlayOneShot(wind);
     }
     
     private void AudioShowCase(AudioClip audioClip)

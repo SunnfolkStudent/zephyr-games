@@ -20,6 +20,8 @@ public class jumpKing2 : MonoBehaviour
     
     private Dash _dash;
     private Input input;
+
+    private float timerTime;
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -33,6 +35,11 @@ public class jumpKing2 : MonoBehaviour
             new Vector2(0.9f, 0.4f), 0f, groundMask);
         
         if (_dash._isDashing) return;
+        
+        if (isGrounded && !canJump)
+        {
+            canJump = true;
+        }
 
         if (jumpValue == 0.0f && isGrounded)
         {
@@ -64,9 +71,9 @@ public class jumpKing2 : MonoBehaviour
             if(isGrounded)
             {
                 rb.velocity = new Vector2(input.MoveInput.x * walkSpeed, jumpValue);
+                canJump = true;
+                jumpValue = 0;
             }
-            canJump = true;
-            jumpValue = 0;
         }
 
         var rbVelocity = rb.velocity;

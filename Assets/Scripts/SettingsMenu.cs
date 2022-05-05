@@ -59,7 +59,7 @@ public class SettingsMenu : MonoBehaviour
     {
         audioMixer.ClearFloat(name);
     }
-    
+     
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
