@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6432d7cc91f25814db5f1d4e87bceb7f
+guid: 42b7e5ca31cc69045b97b3e6b01a88dc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_0
+      name: Core sprites (Level 3)_0
       rect:
         serializedVersion: 2
         x: 128
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfa64a12c64965447980e7704b8a7caa
-      internalID: -2024908326
+      spriteID: cafef5bdcc114f549906843e4e5d6505
+      internalID: -1737584271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_1
+      name: Core sprites (Level 3)_1
       rect:
         serializedVersion: 2
         x: 160
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a261153deec943440a3a56918a3f34f2
-      internalID: -1612483228
+      spriteID: 0daf8fc409b90dd4baaace3b86915b0e
+      internalID: -572758201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_2
+      name: Core sprites (Level 3)_2
       rect:
         serializedVersion: 2
         x: 192
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 331ab14054b86c246a3897265766b2ee
-      internalID: 2085103721
+      spriteID: 97c281870b6478c48833a2d93064b94b
+      internalID: 827833030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_3
+      name: Core sprites (Level 3)_3
       rect:
         serializedVersion: 2
         x: 0
@@ -177,26 +177,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -3, y: 1}
-        - {x: -1, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 1}
+      outline: []
       physicsShape:
-      - - {x: -3, y: 1}
+      - - {x: -1, y: -4}
         - {x: -1, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 1}
+        - {x: 4, y: 1}
       tessellationDetail: 0
       bones: []
-      spriteID: 928346bf0f329a84791e82e3b9908949
-      internalID: -1908864731
+      spriteID: d2c68f4416720fd439c755d55c9c84d3
+      internalID: -946842086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_4
+      name: Core sprites (Level 3)_4
       rect:
         serializedVersion: 2
         x: 32
@@ -206,26 +203,22 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 1}
-        - {x: -16, y: 1}
+      outline: []
       physicsShape:
-      - - {x: -16, y: -16}
+      - - {x: -16, y: 1}
+        - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 1}
-        - {x: -16, y: 1}
       tessellationDetail: 0
       bones: []
-      spriteID: f6d4e532a72d66e4da5e7d631a430121
-      internalID: 1246556201
+      spriteID: 7a4cfdfad1ed4864c939e89a3b25b430
+      internalID: -473656775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_5
+      name: Core sprites (Level 3)_5
       rect:
         serializedVersion: 2
         x: 64
@@ -235,26 +228,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 1}
-        - {x: -16, y: -16}
-        - {x: 1, y: -16}
-        - {x: 3, y: 1}
+      outline: []
       physicsShape:
       - - {x: -16, y: 1}
         - {x: -16, y: -16}
         - {x: 1, y: -16}
-        - {x: 3, y: 1}
+        - {x: 1, y: -4}
+        - {x: -4, y: 1}
       tessellationDetail: 0
       bones: []
-      spriteID: 97161d90f7bc1a144b542ae24211bf25
-      internalID: 1976007754
+      spriteID: 521de46e95a6e2d46b5149bbd2fa799e
+      internalID: -767714629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_6
+      name: Core sprites (Level 3)_6
       rect:
         serializedVersion: 2
         x: 96
@@ -268,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58060c13f8930664487fc68a99cf652d
-      internalID: 619842771
+      spriteID: 7ee304db639f6ba499167d3125e270b5
+      internalID: -2127918430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_7
+      name: Core sprites (Level 3)_7
       rect:
         serializedVersion: 2
         x: 128
@@ -285,30 +275,25 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 1, y: -16}
-        - {x: 1, y: -1}
-        - {x: 16, y: -1}
-        - {x: 16, y: 16}
+      outline: []
       physicsShape:
       - - {x: -16, y: 16}
         - {x: -16, y: -16}
         - {x: 1, y: -16}
-        - {x: 1, y: -1}
+        - {x: 1, y: -4}
+        - {x: 4, y: -1}
         - {x: 16, y: -1}
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: d2f2090e861ddf94580e584eb1212e30
-      internalID: -2137639405
+      spriteID: 9fb41f301bc861243904a11ea5adb6a9
+      internalID: -1108397071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_8
+      name: Core sprites (Level 3)_8
       rect:
         serializedVersion: 2
         x: 160
@@ -318,11 +303,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -1}
-        - {x: 16, y: -1}
-        - {x: 16, y: 16}
+      outline: []
       physicsShape:
       - - {x: -16, y: 16}
         - {x: -16, y: -1}
@@ -330,14 +311,14 @@ TextureImporter:
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: 1ffa16a631c96ac4e8ee852a9a9d2522
-      internalID: 1528525521
+      spriteID: f7c84f335fea62f498a57299d34a3eb3
+      internalID: -615337562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_9
+      name: Core sprites (Level 3)_9
       rect:
         serializedVersion: 2
         x: 192
@@ -347,30 +328,25 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -1}
-        - {x: -1, y: -1}
-        - {x: -1, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
+      outline: []
       physicsShape:
       - - {x: -16, y: 16}
         - {x: -16, y: -1}
-        - {x: -1, y: -1}
+        - {x: -3, y: -1}
+        - {x: -1, y: -4}
         - {x: -1, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: 14d19a34528adec4892fbfae963ddcfa
-      internalID: -1171600007
+      spriteID: f66ee770efc2fb14ca700b6ee8f2fa5f
+      internalID: 1158936607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_10
+      name: Core sprites (Level 3)_10
       rect:
         serializedVersion: 2
         x: 224
@@ -384,14 +360,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42de7ef7294e6ae4fb87d21809ab7e8b
-      internalID: 362518893
+      spriteID: 217536d6e6a90694491c077cabc1fc3d
+      internalID: -1868772838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_11
+      name: Core sprites (Level 3)_11
       rect:
         serializedVersion: 2
         x: 0
@@ -401,11 +377,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -1, y: 16}
-        - {x: -1, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
+      outline: []
       physicsShape:
       - - {x: -1, y: 16}
         - {x: -1, y: -16}
@@ -413,14 +385,14 @@ TextureImporter:
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: 4b99f358de8c6564ab9c37115a1ce045
-      internalID: 323231974
+      spriteID: d6e64857c4d5e3a4fb524e09b3bce945
+      internalID: -1731220067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_12
+      name: Core sprites (Level 3)_12
       rect:
         serializedVersion: 2
         x: 32
@@ -434,14 +406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad6ecadfc686e2644a0e9cf851a13f83
-      internalID: -376733233
+      spriteID: 5e3d3aad2c52db94aa910f32d8f7a024
+      internalID: -701206076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_13
+      name: Core sprites (Level 3)_13
       rect:
         serializedVersion: 2
         x: 64
@@ -451,11 +423,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 1, y: -16}
-        - {x: 1, y: 16}
+      outline: []
       physicsShape:
       - - {x: -16, y: 16}
         - {x: -16, y: -16}
@@ -463,14 +431,14 @@ TextureImporter:
         - {x: 1, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: e13a2715367a6e74c86aa0eccadcaf38
-      internalID: 362772197
+      spriteID: bd04d544e3767854ab38fb4f6c9a0ef1
+      internalID: -742211475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_14
+      name: Core sprites (Level 3)_14
       rect:
         serializedVersion: 2
         x: 96
@@ -484,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17f8a9006f45c4f45b9248dedb5bab7b
-      internalID: 749010831
+      spriteID: 0947b009e78247149a852372bd3d9008
+      internalID: 1530557096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_15
+      name: Core sprites (Level 3)_15
       rect:
         serializedVersion: 2
         x: 128
@@ -501,11 +469,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 1, y: -16}
-        - {x: 1, y: 16}
+      outline: []
       physicsShape:
       - - {x: -16, y: 16}
         - {x: -16, y: -16}
@@ -513,14 +477,14 @@ TextureImporter:
         - {x: 1, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: 8d31645bc05ffb04990b542de4f07ebf
-      internalID: 2114917655
+      spriteID: d16122b282f8fb94abcf6e1ac05ee639
+      internalID: -1614642441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_16
+      name: Core sprites (Level 3)_16
       rect:
         serializedVersion: 2
         x: 192
@@ -530,11 +494,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -1, y: 16}
-        - {x: -1, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
+      outline: []
       physicsShape:
       - - {x: -1, y: 16}
         - {x: -1, y: -16}
@@ -542,14 +502,14 @@ TextureImporter:
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: 613d60bd31abc1d44b040e92b7ea3b5c
-      internalID: 1460452354
+      spriteID: 77451791f1746c54e86650d166097c19
+      internalID: 275003876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_17
+      name: Core sprites (Level 3)_17
       rect:
         serializedVersion: 2
         x: 224
@@ -563,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f85b520de0ec9cf4c96f5f6e41e59ca8
-      internalID: -1941497243
+      spriteID: 46ce78302edf41c4d9b50e8577bd38e8
+      internalID: 972541808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_18
+      name: Core sprites (Level 3)_18
       rect:
         serializedVersion: 2
         x: 0
@@ -580,26 +540,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -1, y: 16}
-        - {x: -1, y: -1}
-        - {x: 16, y: -1}
-        - {x: 16, y: 16}
+      outline: []
       physicsShape:
       - - {x: -1, y: 16}
-        - {x: -1, y: -1}
+        - {x: -1, y: 4}
+        - {x: 4, y: -1}
         - {x: 16, y: -1}
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: 866ff635327fdf74cb4887816e711935
-      internalID: -126565807
+      spriteID: 3f0425422ef5d5d4594dfe4279671b61
+      internalID: -2048625213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_19
+      name: Core sprites (Level 3)_19
       rect:
         serializedVersion: 2
         x: 32
@@ -609,11 +566,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -1}
-        - {x: 16, y: -1}
-        - {x: 16, y: 16}
+      outline: []
       physicsShape:
       - - {x: -16, y: 16}
         - {x: -16, y: -1}
@@ -621,14 +574,14 @@ TextureImporter:
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: f5a47dda6e84e9543855a6360ed26670
-      internalID: 754707562
+      spriteID: 9649b8ebe9dac5b4fb6a2efb97df478f
+      internalID: -1397708727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_20
+      name: Core sprites (Level 3)_20
       rect:
         serializedVersion: 2
         x: 64
@@ -638,26 +591,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -1}
-        - {x: 1, y: -1}
-        - {x: 1, y: 16}
+      outline: []
       physicsShape:
       - - {x: -16, y: 16}
         - {x: -16, y: -1}
-        - {x: 1, y: -1}
+        - {x: -4, y: -1}
+        - {x: 1, y: 4}
         - {x: 1, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: ed056d3f391f4654d8844f32b5e76a9c
-      internalID: -710898057
+      spriteID: 6fe1cc66ce476164cb1328db16cd6b44
+      internalID: -399365185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_21
+      name: Core sprites (Level 3)_21
       rect:
         serializedVersion: 2
         x: 96
@@ -671,14 +621,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48ebd0939c4d0994e9c9e8053fe5e0e7
-      internalID: -1375970328
+      spriteID: 761f2a899b3e6214daf055b9a5a04011
+      internalID: -1605072239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_22
+      name: Core sprites (Level 3)_22
       rect:
         serializedVersion: 2
         x: 128
@@ -688,30 +638,25 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 1}
-        - {x: 1, y: 1}
-        - {x: 1, y: 16}
+      outline: []
       physicsShape:
       - - {x: -16, y: 16}
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 1}
-        - {x: 1, y: 1}
+        - {x: 4, y: 1}
+        - {x: 1, y: 4}
         - {x: 1, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: e8df2e706cff51f43907fe3857852a5e
-      internalID: 895308466
+      spriteID: baa54bbb2bb7d824f9f04cacfb0efddd
+      internalID: -61673455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_23
+      name: Core sprites (Level 3)_23
       rect:
         serializedVersion: 2
         x: 160
@@ -721,26 +666,22 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 1}
-        - {x: -16, y: 1}
+      outline: []
       physicsShape:
-      - - {x: -16, y: -16}
+      - - {x: -16, y: 1}
+        - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 1}
-        - {x: -16, y: 1}
       tessellationDetail: 0
       bones: []
-      spriteID: 246638be8d9dcb343b51ff6113e1481f
-      internalID: 405972132
+      spriteID: 0bc1631a4828b50459a634a6199ed46c
+      internalID: 1453354924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_24
+      name: Core sprites (Level 3)_24
       rect:
         serializedVersion: 2
         x: 192
@@ -750,30 +691,25 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -1, y: 16}
-        - {x: -1, y: 1}
-        - {x: -16, y: 1}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
+      outline: []
       physicsShape:
       - - {x: -1, y: 16}
-        - {x: -1, y: 1}
+        - {x: -1, y: 3}
+        - {x: -3, y: 1}
         - {x: -16, y: 1}
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: f1e4a26364d916344b7237a61c1c607f
-      internalID: -1023558560
+      spriteID: 7edcc3e0d622afa4996523408109398d
+      internalID: 29867139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_25
+      name: Core sprites (Level 3)_25
       rect:
         serializedVersion: 2
         x: 224
@@ -787,14 +723,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b523e4e4f016574da645bf4ca3dd373
-      internalID: -598858781
+      spriteID: 229476dfe17ca7443a75b47e485c898e
+      internalID: -1109433457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_26
+      name: Core sprites (Level 3)_26
       rect:
         serializedVersion: 2
         x: 128
@@ -808,14 +744,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8bab97987b7b2e4aaa6105e2e7b5ec3
-      internalID: -826384562
+      spriteID: e4b68917c5b81cc4c8a98d035c88c9dc
+      internalID: -1436351341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_27
+      name: Core sprites (Level 3)_27
       rect:
         serializedVersion: 2
         x: 160
@@ -829,14 +765,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 783ed13128beaab4d83b88825877396a
-      internalID: -1388795923
+      spriteID: 77cba5a9629f5184da30e3e2cb79fc18
+      internalID: -105064408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_28
+      name: Core sprites (Level 3)_28
       rect:
         serializedVersion: 2
         x: 192
@@ -850,14 +786,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 504d9675dbb7a214d9ee77c2ce48665c
-      internalID: 1713671921
+      spriteID: 0ac89df2615245c409d0b0e283997396
+      internalID: 1050089838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_29
+      name: Core sprites (Level 3)_29
       rect:
         serializedVersion: 2
         x: 192
@@ -871,14 +807,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a4c885bcc1a2554abf80b08e8175d94
-      internalID: 1506393492
+      spriteID: 80b682721c9643f4d9a254a8892198e9
+      internalID: -920881552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_30
+      name: Core sprites (Level 3)_30
       rect:
         serializedVersion: 2
         x: 224
@@ -892,14 +828,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0b98e22072537241bb57859d43ca920
-      internalID: -6170077
+      spriteID: 4cb8454aeb97ac746aa24599850bce09
+      internalID: 850699852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_31
+      name: Core sprites (Level 3)_31
       rect:
         serializedVersion: 2
         x: 192
@@ -909,27 +845,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -3, y: 2}
-        - {x: -3, y: -4}
-        - {x: 2, y: -9}
-        - {x: 16, y: -9}
-        - {x: 16, y: 2}
-      physicsShape:
-      - - {x: -3, y: 2}
-        - {x: -1, y: -9}
-        - {x: 16, y: -9}
-        - {x: 16, y: 2}
+      outline: []
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1d3376dc0d03b840a1743b055c33ac7
-      internalID: 1614526075
+      spriteID: 86af36e93d8f1494eb38603f0808cde4
+      internalID: 753518701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Core sprites (Level4-1)_32
+      name: Core sprites (Level 3)_32
       rect:
         serializedVersion: 2
         x: 224
@@ -939,21 +866,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 2}
-        - {x: -16, y: -9}
-        - {x: -2, y: -9}
-        - {x: 3, y: -3}
-        - {x: 3, y: 2}
-      physicsShape:
-      - - {x: -16, y: 2}
-        - {x: -16, y: -9}
-        - {x: 0, y: -9}
-        - {x: 3, y: 2}
+      outline: []
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2122ffa736733447bc29198b7639699
-      internalID: -199463706
+      spriteID: c24b3d5e0b22b6d4a8fd2ae33472e420
+      internalID: -869893155
       vertices: []
       indices: 
       edges: []
@@ -969,39 +887,39 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Core sprites (Level4-1)_10: 362518893
-      Core sprites (Level4-1)_18: -126565807
-      Core sprites (Level4-1)_2: 2085103721
-      Core sprites (Level4-1)_31: 1614526075
-      Core sprites (Level4-1)_22: 895308466
-      Core sprites (Level4-1)_28: 1713671921
-      Core sprites (Level4-1)_12: -376733233
-      Core sprites (Level4-1)_0: -2024908326
-      Core sprites (Level4-1)_5: 1976007754
-      Core sprites (Level4-1)_9: -1171600007
-      Core sprites (Level4-1)_19: 754707562
-      Core sprites (Level4-1)_29: 1506393492
-      Core sprites (Level4-1)_1: -1612483228
-      Core sprites (Level4-1)_27: -1388795923
-      Core sprites (Level4-1)_26: -826384562
-      Core sprites (Level4-1)_32: -199463706
-      Core sprites (Level4-1)_3: -1908864731
-      Core sprites (Level4-1)_8: 1528525521
-      Core sprites (Level4-1)_25: -598858781
-      Core sprites (Level4-1)_15: 2114917655
-      Core sprites (Level4-1)_11: 323231974
-      Core sprites (Level4-1)_7: -2137639405
-      Core sprites (Level4-1)_17: -1941497243
-      Core sprites (Level4-1)_23: 405972132
-      Core sprites (Level4-1)_24: -1023558560
-      Core sprites (Level4-1)_4: 1246556201
-      Core sprites (Level4-1)_16: 1460452354
-      Core sprites (Level4-1)_20: -710898057
-      Core sprites (Level4-1)_6: 619842771
-      Core sprites (Level4-1)_13: 362772197
-      Core sprites (Level4-1)_21: -1375970328
-      Core sprites (Level4-1)_30: -6170077
-      Core sprites (Level4-1)_14: 749010831
+      Core sprites (Level 3)_3: -946842086
+      Core sprites (Level 3)_18: -2048625213
+      Core sprites (Level 3)_24: 29867139
+      Core sprites (Level 3)_23: 1453354924
+      Core sprites (Level 3)_6: -2127918430
+      Core sprites (Level 3)_15: -1614642441
+      Core sprites (Level 3)_32: -869893155
+      Core sprites (Level 3)_26: -1436351341
+      Core sprites (Level 3)_19: -1397708727
+      Core sprites (Level 3)_2: 827833030
+      Core sprites (Level 3)_11: -1731220067
+      Core sprites (Level 3)_13: -742211475
+      Core sprites (Level 3)_25: -1109433457
+      Core sprites (Level 3)_22: -61673455
+      Core sprites (Level 3)_10: -1868772838
+      Core sprites (Level 3)_30: 850699852
+      Core sprites (Level 3)_9: 1158936607
+      Core sprites (Level 3)_0: -1737584271
+      Core sprites (Level 3)_16: 275003876
+      Core sprites (Level 3)_14: 1530557096
+      Core sprites (Level 3)_27: -105064408
+      Core sprites (Level 3)_29: -920881552
+      Core sprites (Level 3)_17: 972541808
+      Core sprites (Level 3)_31: 753518701
+      Core sprites (Level 3)_5: -767714629
+      Core sprites (Level 3)_8: -615337562
+      Core sprites (Level 3)_12: -701206076
+      Core sprites (Level 3)_20: -399365185
+      Core sprites (Level 3)_4: -473656775
+      Core sprites (Level 3)_1: -572758201
+      Core sprites (Level 3)_7: -1108397071
+      Core sprites (Level 3)_21: -1605072239
+      Core sprites (Level 3)_28: 1050089838
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
