@@ -9,7 +9,7 @@ public class SettingsMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public Dropdown resolutionDropdown;
 
-    private Resolution[] resolutions;
+    Resolution[] resolutions;
     
     void Start()
     {
@@ -47,12 +47,12 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetMusicVol(float musicvol)
     {
-        audioMixer.SetFloat("MusicVolume", musicvol);
+        audioMixer.SetFloat("music", musicvol);
     }
 
     public void SetSfxVol(float sfxvol)
     {
-        audioMixer.SetFloat("SFXVolume", sfxvol);
+        audioMixer.SetFloat("sfx", sfxvol);
     }
 
     public void ClearVolume(string name)
