@@ -11,6 +11,8 @@ public class Dash : MonoBehaviour
    [SerializeField] private Vector2 _dashingDir;
    [SerializeField] public bool _isDashing;
    [SerializeField] private bool _canDash = true;
+   [SerializeField] private FlashImage _flashImage = null;
+   [SerializeField] Color _newColor = Color.white;
 
    private Animator _animator;
    private Rigidbody2D _rigidbody;
@@ -48,7 +50,7 @@ public class Dash : MonoBehaviour
          {
             _dashingDir = new Vector2(transform.localScale.x, 0);
          }
-         
+         _flashImage.StartFlash(0.25f, 0.5f, _newColor);
          _canDash = false;
          _isDashing = true;
          _trailRenderer.emitting = true;
@@ -58,12 +60,12 @@ public class Dash : MonoBehaviour
       if (_isDashing)
       {
          _rigidbody.velocity = _dashingDir * _dashingVelocity;
+        
       }
       else
       {
          _dashingDir = input.MoveInput;
       }
-
    }
 
    private IEnumerator StopDashing()

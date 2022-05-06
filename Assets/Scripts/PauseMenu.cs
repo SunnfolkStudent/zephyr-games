@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -6,10 +7,13 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused;
     public GameObject pauseMenuUI;
-
+    public Input _input;
+    public AudioSource _play;
+    public AudioSource _pause;
+    
     void Update()
     {
-        if (Keyboard.current.escapeKey.isPressed)
+        if (_input.PausePressed)
         {
             if (GameIsPaused)
             {
@@ -27,6 +31,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        _pause.volume = 0;
+        _play.volume = 1;
     }
 
     void Pause()
@@ -34,6 +40,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        _pause.volume = 1;
+        _play.volume = 0;
     }
 
     public void LoadSettings()

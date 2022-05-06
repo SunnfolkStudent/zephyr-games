@@ -11,6 +11,7 @@ public class Input : MonoBehaviour
     public bool JumpHeld { private set; get; }
     
     public bool DashSpressed { private set; get;}
+    public bool PausePressed { private set; get;}
 
     private void Update()
     {
@@ -21,6 +22,8 @@ public class Input : MonoBehaviour
         JumpHeld = input.Player.Jump.ReadValue<float>() > 0;
         
         DashSpressed = input.Player.Dash.WasPressedThisFrame();
+
+        PausePressed = input.Player.Pause.WasPressedThisFrame();
     }
 
     private void Awake() => input = new InputActions();

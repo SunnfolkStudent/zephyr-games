@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "8c82401d-d40b-4ebe-9968-3e7e34914642",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -176,43 +185,26 @@
                     "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Camera",
-            "id": "e87000bf-ff0a-42d1-9dc9-9450b7cca38c",
-            "actions": [
-                {
-                    "name": "Camera",
-                    "type": "Button",
-                    "id": "63516047-64b9-40b2-ae79-9ba98e4065b8",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "50b20a42-a2a6-47d2-81af-6a9bedcaa300",
-                    "path": "<Keyboard>/x",
+                    "id": "e52d1fb9-2136-4b2f-bf16-508ccb693547",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Camera",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "e313ca89-fe38-4d2a-ad96-93f34334d381",
+                    "id": "816f52e6-be1e-4ef0-ba13-6798fe6c3905",
                     "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Camera",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
