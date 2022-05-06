@@ -19,12 +19,19 @@ public class CinemachineShake : MonoBehaviour
         Instance = this;
         //cinemachineVirtualCamera = GetComponent<CinemachineVirtualCamera>();
         _brain = GetComponent<CinemachineBrain>();
-        cinemachineVirtualCamera = _brain.ActiveVirtualCamera as CinemachineVirtualCamera;
+        
+        if (cinemachineVirtualCamera == null)
+        {
+            cinemachineVirtualCamera = _brain.ActiveVirtualCamera as CinemachineVirtualCamera;
+        }
     }
    private  IEnumerator Start()
     {
         yield return null;
-        cinemachineVirtualCamera = _brain.ActiveVirtualCamera as CinemachineVirtualCamera;
+        if (cinemachineVirtualCamera == null)
+        {
+            cinemachineVirtualCamera = _brain.ActiveVirtualCamera as CinemachineVirtualCamera;
+        }
     }
    
 
@@ -43,6 +50,8 @@ public class CinemachineShake : MonoBehaviour
 
     private void Update()
     {
+        if (cinemachineVirtualCamera == null) return;
+        
         if (cinemachineVirtualCamera.name !=_brain.ActiveVirtualCamera.VirtualCameraGameObject.name)
         {
             cinemachineVirtualCamera = _brain.ActiveVirtualCamera as CinemachineVirtualCamera;
