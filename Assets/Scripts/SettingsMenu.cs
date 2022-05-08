@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
@@ -7,9 +8,11 @@ using UnityEngine.Audio;
 public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public Dropdown resolutionDropdown;
+    public TMP_Dropdown resolutionDropdown;
 
     Resolution[] resolutions;
+
+    private int currentResolutionIndex = 0;
     
     void Start()
     {
@@ -17,7 +20,7 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
 
-        int currentResolutionIndex = 0;
+        currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + "x" + resolutions[i].height;
