@@ -37,6 +37,6 @@ public class EndScene : MonoBehaviour
     }
     public void LoadEnd()
     {
-        SceneManager.LoadScene("SceneName");
+        SceneManager.LoadScene("WinMenu");
     }
 }
