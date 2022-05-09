@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12d2e6c2-c3f1-4107-8a49-0b17b139877b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.zephyr-games/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.zephyr-games/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Resources/Animations/EndSceneAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Resources/Animations/EndSceneAnimation.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EndScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EndScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +86,7 @@
       <workItem from="1651649964871" duration="12894000" />
       <workItem from="1651749561442" duration="3331000" />
       <workItem from="1651837302128" duration="4476000" />
+      <workItem from="1652083018897" duration="393000" />
     </task>
     <servers />
   </component>
