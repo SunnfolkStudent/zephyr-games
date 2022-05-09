@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12d2e6c2-c3f1-4107-8a49-0b17b139877b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/EndScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EndScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="12d2e6c2-c3f1-4107-8a49-0b17b139877b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +81,7 @@
       <workItem from="1651649964871" duration="12894000" />
       <workItem from="1651749561442" duration="3331000" />
       <workItem from="1651837302128" duration="4476000" />
-      <workItem from="1652083018897" duration="393000" />
+      <workItem from="1652083018897" duration="418000" />
     </task>
     <servers />
   </component>
